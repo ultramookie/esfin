@@ -1,0 +1,27 @@
+{
+  "template" : "esfin*",
+  "mappings" : {
+    "transactions" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        },
+        "date" : {
+          "type" : "date",
+          "format": "yyyyMMdd"
+        },
+        "amount" : {
+          "type" : "float"
+        },
+        "merchant" : {
+          "type" : "keyword",
+          "index" : true
+        },
+        "category" : {
+          "type" : "keyword",
+          "index" : true
+        }
+      }
+    }
+  }
+}
