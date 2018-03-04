@@ -45,6 +45,9 @@ def go():
                     previous = row['date']
                     row['id'] = row['date'] + str(postfix)
 
+                row['merchant'] = unicode(row['merchant'], errors='replace')
+                row['category'] = unicode(row['category'], errors='replace')
+
                 # Debug stuff
                 if parsed.debug:
                     pprint(row)
